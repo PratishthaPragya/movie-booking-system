@@ -75,31 +75,31 @@ function NavLg({ defaultLocation }) {
 
   return (
     <>
-      <div className="container flex mx-auto px-4 items-center justify-between">
-        <div className="flex items-center w-1/2 gap-3">
-          <div className="w-10 h-10">
+      <div className=" flex w-full bg-white px-10 items-center justify-between">
+        <div className="flex items-center w-2/3 gap-5">
+          <div className="w-30 h-10">
             <img
-              src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png"
+              src="https://pnghq.com/wp-content/uploads/2023/02/bookmyshow-logo-png-6728.png"
               alt="logo"
               className="w-full h-full"
             />
           </div>
-          <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
+          <div className="w-full flex border border-gray-300 items-center gap-3 bg-white px-3 py-1 rounded-md">
             <BiSearch />
             <input
               type="search"
               className="w-full bg-transparent border-none focus:outline-none"
-              placeholder="Search for movies, events, plays, sports and activities"
+              placeholder="Search for Movies, Events, Plays, Sports and Activities"
             />
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white ">
-            {location || "Select you..."} <BiChevronDown />
+          <span className="text-black-200 text-base flex items-center cursor-pointer  ">
+            {location || "Select location..."} <BiChevronDown />
           </span>
           <CustomModal />
 
-          <div className="w-8 h-8 text-white">
+          <div className="w-8 h-8 text-gray">
             <BiMenu className="w-full h-full" />
           </div>
         </div>
@@ -111,7 +111,7 @@ function NavLg({ defaultLocation }) {
 // Main NavBar Component
 const Navbar = ({ defaultLocation }) => {
   return (
-    <nav className="bg-darkBackground-700 px-4 py-3">
+    <nav className="white px-4 py-3">
       {/* Mobile Screen Navbar */}
       <div className="md:hidden">
         <NavSm defaultLocation={defaultLocation} />
@@ -128,4 +128,14 @@ const Navbar = ({ defaultLocation }) => {
   );
 };
 
+
+
+
 export default Navbar;
+
+
+
+
+
+
+
